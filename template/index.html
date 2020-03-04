@@ -1,0 +1,22 @@
+<HTML>
+    <BODY>
+        <h2>Blog!</h2>
+
+        Inicia tu Sesion <br>
+    
+        <div class="col-xs-8 text-right menu-1">
+            <ul>
+                {% if login %}
+                <li><h3>Hola, {{user}}</h3></li>
+                <li><a href="/logout"><h3><i class="fas fa-sign-out-alt"></i></h3></a></li>
+                {% elseif not login %}
+                <form action="/login" method="POST">
+                <li><input type="text" placeholder="Usuario" name="userId"> </li>
+                <li><input type="password" placeholder="Password" name="password"></li>
+                <input type="submit" value="Logearse"/>
+                </form>                            
+                {% endif %}
+            </ul>
+        </div>
+    </BODY>
+</HTML>

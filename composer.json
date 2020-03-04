@@ -1,0 +1,14 @@
+{
+    "name": "blogsis/leandro",
+    "autoload": {
+        "psr-4": {
+            "Blogs\\": "src/"
+        }
+    },
+    "require": {
+        "slim/slim": "^4.4",
+        "slim/psr7": "^1.0",
+        "twig/twig": "^3.0",
+        "mongodb/mongodb": "^1.6"
+    }
+}
